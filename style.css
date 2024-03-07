@@ -1,0 +1,15 @@
+img.red{
+    filter: hue-rotate(1234deg);
+}
+
+img.green{
+    filter: hue-rotate(300deg);
+}
+
+input[type="checkbox"]{
+    accent-color: #a855f7;
+}
+
+input[type="text"]{
+    outline: none;
+}

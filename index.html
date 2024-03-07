@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Working here</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg-slate-900">
+    <div class="sticky p-4 text-white text-2xl top-0 w-full bg-violet-500 bg-opacity-50 mb-2">
+        <a href="" class="p-2 mx-3 bg-sky-500">here</a>
+        <a href="" class="p-2 mx-3 bg-sky-500">here</a>
+        <a href="" class="p-2 mx-3 bg-sky-500">here</a>
+    </div>
+    <h1 class=" bg-purple-500 py-4 px-3 w-2/4 text-center mx-auto text-5xl rounded-full">Semplice mappa Leaflet</h1>
+
+    <div class="text-white rounded-2xl grid grid-cols-3 gap-3 p-3 mt-16 bg-slate-600 w-10/12 mx-auto">
+        <div id="map" class="col-span-2 rounded-2xl mx-auto min-w-full min-h-96"></div>
+        <div class="bg-slate-800  text-center rounded-2xl p-2 text-xl">
+            <h1 class="text-3xl mb-4">Go to:</h1>
+            <label for="Lat">Lat</label>
+            <input class="w-3/4 bg-gray-700 focus:bg-gray-500 px-1 rounded"  type="text" name="Lat" id="LatI">
+            <hr class="my-4 w-2/4 mx-auto">
+            <label for="Lng">Lng</label>
+            <input class="mb-3 w-3/4 bg-gray-700 focus:bg-gray-500 px-1 rounded" type="text" name="Lng" id="LngI">
+            <br>
+            <label for="isMarked?">Add marker:</label>
+            <input  type="checkbox" name="isMarked?" id="isMarker">
+            <br>
+            <button id="submit" class="mt-3 bg-purple-500 py-2 px-7 rounded-2xl active:bg-purple-700">Go</button>
+        </div>
+    </div>
+
+    <div class="text-white w-1/4 mx-auto">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, maiores aliquam. Ipsum cupiditate doloribus incidunt velit porro quod voluptatem corporis harum totam eaque, quidem optio tempora officia voluptatibus atque omnis!
+        Placeat vel numquam officia voluptatem similique culpa, nisi aspernatur nobis nihil quo, ab fugiat voluptatibus mollitia, commodi veniam asperiores ad ipsum nemo. Repellendus ea obcaecati magnam consectetur, recusandae itaque cum.
+        Illo, ipsam facilis excepturi quae porro quidem est, sint alias sed similique placeat quis tempore soluta fugiat veniam, molestiae et quaerat vero ipsa cumque. Neque quo soluta officia explicabo quas.
+        Facilis officia quae deserunt ratione fugiat ex quis nostrum esse reiciendis, similique, sint quaerat quod quidem eligendi voluptate optio ab? Nemo laudantium adipisci alias, ducimus unde officia culpa animi quibusdam!
+        Laborum vero similique aperiam explicabo at amet! Veniam esse error aspernatur recusandae alias quisquam ullam qui eaque, dolores iure sapiente nesciunt quas, modi veritatis deleniti non sequi consequuntur fugit facilis.
+    </div>
+
+    <script src="./scriptLeaflet.js"></script>
+</body>
+</html>
