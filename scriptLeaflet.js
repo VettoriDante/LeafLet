@@ -1,9 +1,10 @@
-const LatI = document.querySelector("#LatI");
-const LngI = document.querySelector("#LngI");
-const btn = document.querySelector("#submit");
-const mark = document.querySelector("#isMarker");
-let arcipressi = [43.7674522 , 11.2095389];
-let map = L.map('map')//L chiamata a LeafLet poi Bo
+//recupero e creazione delle variabili
+const LatI = document.querySelector("#LatI");//latitudine form
+const LngI = document.querySelector("#LngI");//longitudine form
+const btn = document.querySelector("#submit");//btn form
+const mark = document.querySelector("#isMarker");//verifica sull'inserimento del marker in goTo
+let arcipressi = [43.7674522 , 11.2095389];//salvo le coordinate di una posizione
+let map = L.map('map')//L chiamata a LeafLet creando la mapp
 map.setView([43.7659151, 11.2135399], 15);//tra [latitudine , longitudine] , valore zoom
 /*Zoom: valore 0 = pianeta intero , 19 valore massimo di zoom(consigliato) */
 
@@ -13,12 +14,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-//aggiungo il marker
+//aggiungo il marker (usati nella prima mappa)
 let marker = L.marker([43.7659151, 11.2135399]).addTo(map);
 let marker2 = L.marker(arcipressi).addTo(map);
 let marker3 = L.marker([43.7656236 , 11.2067503]).addTo(map);
 
-let circle = L.circle(arcipressi, {color: "yellow", radius: 400}).addTo(map);
+let circle = L.circle(arcipressi, {color: "yellow", radius: 400}).addTo(map);//creazione cerchio
 marker._icon.classList.add("red"); //aggiunge classi al marker
 marker3._icon.classList.add("green"); //aggiunge classi al marker
 //ono contiene filter:hue-rotate(num deg);
@@ -37,7 +38,7 @@ link.push(marker3.getLatLng());
 //creo i collegamenti tramite polyline();
 let line = L.polyline(link, {color: 'black'}).addTo(map);
 
-
+//funzione che porta ad una posizione definita dall'utente nel form
 function goTo(){
     let tmpA = [LatI.value , LngI.value];
     console.log(mark.checked);
@@ -47,4 +48,6 @@ function goTo(){
     }
 }
 
+
+//Events
 btn.addEventListener("click" , goTo);
