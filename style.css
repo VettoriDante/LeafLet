@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 /* Classi per colori marker */
 img.red{
     filter: hue-rotate(1234deg);
@@ -21,5 +25,5 @@ input[type="text"]{
 /* Navbar */
 .sticky{
     backdrop-filter: blur(4px);
-    z-index: 1000;
+    z-index: 1001;
 }
