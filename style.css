@@ -37,5 +37,5 @@ input[type="text"]{
 .nav-item{
     border-radius: 10px 20px;
     padding: 4px 30px;
-    min-width: 100%;
+    min-width: 85%;
 }
