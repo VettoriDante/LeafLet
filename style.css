@@ -2,6 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 
+:root{
+    --purple-500: rgb(168, 85, 247);
+    --items: rgb(136, 0, 118);
+}
+
 /* Classi per colori marker */
 img.red{
     filter: hue-rotate(1234deg);
@@ -13,9 +18,8 @@ img.green{
 
 /* Gestione inputs */
 input[type="checkbox"]{
-    accent-color: #a855f7;
-    mix-blend-mode: #a855f7;
-
+    accent-color: var(--purple-500);
+    mix-blend-mode: var(--purple-500);
 }
 
 input[type="text"]{
@@ -23,7 +27,15 @@ input[type="text"]{
 }
 
 /* Navbar */
-.sticky{
+.nav{
     backdrop-filter: blur(4px);
     z-index: 1001;
+    text-align: center;
+}
+
+/* nav items */
+.nav-item{
+    border-radius: 10px 20px;
+    padding: 4px 30px;
+    min-width: 100%;
 }
