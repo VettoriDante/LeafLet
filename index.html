@@ -5,7 +5,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Working here</title>
+    <title>LeafletEx</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
 
     <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="bg-slate-900 text-white">
+<body class="bg-slate-900 text-white text-xl md:text-3xl">
     <!-- Navbar -->
     <div class="nav sm:sticky p-3  text-2xl top-0 w-full bg-violet-500 bg-opacity-50 mb-2">
         <div class="grid grid-cols-2 sm:grid-cols-4 md:w-8/12 mx-auto gap-3">
@@ -40,17 +40,17 @@
     </div>
 
     <!-- separatorio-->
-    <div class="mt-16 sm:w-3/4 mx-auto  text-3xl rounded-2xl bg-cover bg-center bg-no-repeat
-        shadow-2xl shadow-blue-900"
+    <div class="mt-16 sm:w-3/4 mx-auto rounded-2xl bg-cover bg-center bg-no-repeat
+        shadow-none sm:shadow-2xl sm:shadow-blue-900"
         style="background-image: url('https://c.wallhere.com/photos/10/65/minimalism-50416.jpg!d')">
         <div class="bg-black rounded-2xl bg-opacity-60 p-6" style="backdrop-filter: blur(2px);">
-            <p class="text-3xl">È possibile aggiungere marcatori (o "marker") su una mappa per evidenziare punti di
+            <p>È possibile aggiungere marcatori (o "marker") su una mappa per evidenziare punti di
                 interesse, e associare a questi marker finestre popup che mostrano ulteriori informazioni quando un
                 utente ci clicca.</p>
             <br>
             <br>
             <br>
-            <p class="text-3xl">Nella mappa qua sopra si va a creare 1 marker, andando a settare la sua posizione
+            <p>Nella mappa qua sopra si va a creare 1 marker, andando a settare la sua posizione
                 tramite longitudine a latitudine, per aggiungerlo infine alla mappa tramite il .add(map); I marker si
                 possono personalizzare tramite marker.icon.classList.add(). </p>
         </div>
@@ -66,25 +66,25 @@
 
 
     <!-- separatorio-->
-    <div class="mt-16 sm:w-3/4 mx-auto  text-3xl rounded-2xl bg-cover bg-center bg-no-repeat
-    shadow-2xl shadow-blue-900"
+    <div class="mt-16 sm:w-3/4 mx-auto   rounded-2xl bg-cover bg-center bg-no-repeat
+    shadow-none sm:shadow-2xl sm:shadow-blue-900"
         style="background-image: url('https://c.wallhere.com/photos/10/65/minimalism-50416.jpg!d')">
         <div class="bg-black rounded-2xl bg-opacity-60 p-6" style="backdrop-filter: blur(2px);">
-            <p class="text-3xl">Una "Polyline" in Leaflet è un elemento grafico che rappresenta una linea composta da
+            <p>Una "Polyline" in Leaflet è un elemento grafico che rappresenta una linea composta da
                 una serie di segmenti collegati tra loro. Questi segmenti possono essere utilizzati per tracciare
                 percorsi, confini, strade e altre caratteristiche lineari su una mappa.</p>
             <br>
             <br>
             <br>
-            <p class="text-3xl">1. Creazione: Per creare una polyline su una mappa Leaflet, è necessario definire un
+            <p>1. Creazione: Per creare una polyline su una mappa Leaflet, è necessario definire un
                 array di coordinate geografiche che rappresentano i punti lungo la linea. Questo array di coordinate
                 viene quindi utilizzato per istanziare un oggetto Polyline. </p>
             <br>
-            <p class="text-3xl">2. Personalizzazione: È possibile personalizzare l'aspetto della polyline specificando
+            <p>2. Personalizzazione: È possibile personalizzare l'aspetto della polyline specificando
                 opzioni come colore, spessore della linea, opacità e stile. Queste opzioni vengono solitamente passate
                 come parte dell'oggetto di configurazione durante la creazione della polyline. </p>
             <br>
-            <p class="text-3xl">3. Aggiunta alla mappa: Dopo aver creato la polyline, è necessario aggiungerla alla
+            <p>3. Aggiunta alla mappa: Dopo aver creato la polyline, è necessario aggiungerla alla
                 mappa utilizzando il metodo .addTo(map), dove map è l'istanza della mappa Leaflet a cui si desidera
                 aggiungere la polyline. </p>
         </div>
@@ -100,28 +100,38 @@
 
 
     <!-- separatorio-->
-    <div class="mt-16 sm:w-3/4 mx-auto  text-3xl rounded-2xl bg-cover bg-center bg-no-repeat
-    shadow-2xl shadow-blue-900"
+    <div class="mt-16 sm:w-3/4 mx-auto   rounded-2xl bg-cover bg-center bg-no-repeat
+    shadow-none sm:shadow-2xl sm:shadow-blue-900"
         style="background-image: url('https://c.wallhere.com/photos/10/65/minimalism-50416.jpg!d')">
         <div class="bg-black rounded-2xl bg-opacity-60 p-6" style="backdrop-filter: blur(2px);">
-            <p class="text-3xl">
-                Nel contesto di Leaflet, un "cerchio" è un elemento grafico che rappresenta una forma circolare
-                sulla mappa. Questo cerchio può essere utilizzato per evidenziare un'area specifica, indicare una
-                posizione o rappresentare un'entità geografica di interesse.
-            </p>
-            <br>
-            <br>
-            <br>
-            <p class="text-3xl">
-                Per creare un cerchio su una mappa Leaflet, devi specificare il centro del cerchio e il suo raggio.
-                Il centro è di solito espresso come una coppia di coordinate geografiche (latitudine e longitudine),
-                mentre il raggio è espresso in metri.
-            </p>
-            <div class="flex justify-center">
-                <img class="w-1/2 mt-3" src="https://miro.medium.com/v2/resize:fit:817/1*78w3M_4zhWGXN4m7PMr2bg.png"
-                    alt="Descrizione dell'immagine">
+            <!-- divisione in griglia test-foto  -->
+            <div class="grid md:grid-cols-2">
+                <div>
+                    <p>
+                        Nel contesto di Leaflet, un "cerchio" è un elemento grafico che rappresenta una forma circolare
+                        sulla mappa. Questo cerchio può essere utilizzato per evidenziare un'area specifica, indicare una
+                        posizione o rappresentare un'entità geografica di interesse.
+                    </p>
+                    <p>
+                        Per creare un cerchio su una mappa Leaflet, devi specificare il centro del cerchio e il suo raggio.
+                        Il centro è di solito espresso come una coppia di coordinate geografiche (latitudine e longitudine),
+                        mentre il raggio è espresso in metri.
+                    </p>        
+                </div>
+                <div>
+                    <div class="flex justify-center items-center min-h-full">
+                        <img class="w-10/12 mt-3" src="https://miro.medium.com/v2/resize:fit:817/1*78w3M_4zhWGXN4m7PMr2bg.png"
+                            alt="Descrizione dell'immagine">
+                    </div>
+        
+                </div>
             </div>
-
+            <p class="mt-16">
+                Possono essere inseriti anche dei poligoni a piacere tramite la funzione <b>polygon()</b>, la quale prende come parametro
+                (come nel caso di polyline) un array che contiene altri array di latitudine e longitudine.
+                <br>
+                La personalizzazione del poligono segue le stesse regole del cerchio in questo caso <b>L.polygon(array, {color: "black"});</b>
+            </p>
         </div>
     </div>
 
@@ -136,7 +146,7 @@
         <div id="map" class="col-span-3 md:col-span-2 rounded-2xl mx-auto min-w-full min-h-96"></div>
         <!-- Form -->
         <div class="col-span-3 md:col-span-1 bg-slate-800  text-center rounded-2xl p-2 text-xl">
-            <h1 class="text-3xl mb-4">Go to:</h1>
+            <h1 class=" mb-4">Go to:</h1>
             <label for="Lat">Lat</label>
             <input class="w-3/4 bg-gray-700 focus:bg-gray-500 py-0.5 px-1 rounded border-b-2" type="text" name="Lat" id="LatI">
             <hr class="my-4 w-2/4 mx-auto">

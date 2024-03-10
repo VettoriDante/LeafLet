@@ -39,6 +39,8 @@ let marker2 = L.marker(arcipressi).addTo(map);
 let marker3 = L.marker([43.7656236 , 11.2067503]).addTo(map);
 
 let circle = L.circle(arcipressi, {color: "yellow", radius: 400}).addTo(map);//creazione cerchio
+let poligono = [[43.7704297,11.2096006],[43.7644808,11.1999965],[43.7640128,11.2185373]];//creazione array per poligono
+let triangle = L.polygon(poligono, {color: "black"}).addTo(map4);//creazione poligono
 marker._icon.classList.add("red"); //aggiunge classi al marker
 marker3._icon.classList.add("green"); //aggiunge classi al marker
 //ono contiene filter:hue-rotate(num deg);
